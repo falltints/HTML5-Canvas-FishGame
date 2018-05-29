@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testing</title>
+</head>
+<body>
+<canvas id="canvas" width="400px" height="400px" style="background-color: black"></canvas>
+<script>
+    var ctx = document.getElementById('canvas').getContext('2d');
+    ctx.globalAlpha = 0.6;
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 20;
+    ctx.lineCap = 'round';
+    ctx.beginPath();
+    ctx.moveTo(200, 400);
+    ctx.lineTo(200, 200);
+    ctx.lineTo(400, 200);
+    ctx.stroke();
+</script>
+<!--(0,0) (0,4) (4,4) (-4, 4) (-4, -4) (4, -4)-->
+<!--<script>
+    console.log(Math.atan2(4,-4) + '/' + 2 * Math.PI / 8);
+</script>-->
+</body>
+</html>
